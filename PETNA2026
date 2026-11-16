@@ -1,0 +1,419 @@
+# Codex Task: Build a Simple, Complete Prototype for Marketplace Pet Lovers
+
+## 1. Your Role
+
+Act as a senior frontend developer and UI/UX designer. Read the attached *Marketplace Pet Lovers project brief* carefully and use it as the primary specification.
+
+Your task is to *implement a working, interactive frontend prototype that demonstrates the entire concept to potential users*.
+
+This is a demonstration prototype, not a production application. The goal is to help people understand the project, explore its features, and experience the main user journeys.
+
+Do not stop after proposing a plan, producing a design description, or generating a mockup. Inspect the project files, implement the prototype, and verify that it works.
+
+## 2. Strict Technical Constraints
+
+Keep the implementation extremely simple.
+
+- Use *HTML5, CSS3, and vanilla JavaScript only*.
+- Do not use React, Vue, Angular, Next.js, TypeScript, or other frontend frameworks.
+- Do not implement a backend, API server, database, authentication system, or admin dashboard.
+- Do not introduce unnecessary npm packages, build tools, external services, API keys, or account registrations.
+- Do not integrate real payment gateways, delivery providers, veterinary booking systems, or external messaging services.
+- Use realistic, predefined mock data stored in local JavaScript files.
+- Use localStorage only where useful to preserve demo interactions, such as cart contents and selected preferences.
+- External public image URLs or static assets may be used for visual presentation. Prefer reliable sources and provide graceful fallbacks if an image fails to load.
+- Do not make external API calls necessary for the prototype to work.
+- The entire application must be runnable locally by opening index.html in a browser, without a build process or server when technically feasible.
+
+If a project already exists in the repository, inspect it before making changes. Reuse suitable files and assets, avoid unnecessary rewrites, and preserve unrelated work. If the repository is empty, create a minimal, well-organized static website.
+
+## 3. Product Concept
+
+Marketplace Pet Lovers is a digital marketplace connecting:
+
+- Pet owners and animal lovers.
+- People looking to adopt animals.
+- Animal shelters and animal-protection associations.
+- Veterinarians and pet shops.
+- Pet-product suppliers and other relevant professionals.
+
+The platform brings together responsible pet adoption, pet products, veterinary services, animal-care information, promotions, and customer support.
+
+The experience must communicate two main purposes:
+
+1. Help people discover and care for animals responsibly.
+2. Provide a central marketplace for pet products and professional services.
+
+Build one coherent platform where these activities are connected, rather than a collection of unrelated demo pages.
+
+## 4. Required User-Facing Features
+
+Cover every major part of the business concept through simple, clickable frontend experiences.
+
+### A. Homepage
+
+Create an attractive homepage that explains what the platform offers immediately.
+
+Include:
+- A header with logo or text-based branding, navigation, and shopping-cart indicator.
+- A hero section with a clear headline, short description, relevant pet imagery, and calls to action.
+- Quick access to Adoption, Shop, Services, and Pet Care.
+- Featured animals available for adoption.
+- Featured pet products.
+- Recommended veterinarians or pet shops.
+- A promotions section.
+- A pet-care educational section.
+- A section introducing the platform's purpose and responsible adoption.
+- A partner invitation section.
+- A useful footer with navigation, contact information, and basic informational links.
+
+Primary calls to action must navigate to the relevant functional sections.
+
+### B. Responsible Pet Adoption
+
+Users must be able to explore mock adoption listings.
+
+Implement:
+- An adoption listing page or section.
+- Animal cards displaying a photograph, name, species, age, location, and short description.
+- Search and simple filters, such as species and location.
+- A detailed animal profile opened through a card click.
+- Information about the animal's temperament, care requirements, and adoption conditions.
+- A visible indication that the listing belongs to a shelter or association.
+- An "Interested in adopting" or equivalent button.
+- A simple adoption-interest form with name, email, and message fields.
+- Client-side validation and a clear success confirmation after submission.
+
+Use predefined animals representing several species, such as cats and dogs.
+
+Adoption must feel distinct from shopping. Do not place animals in the shopping cart or pretend that adoption is an ordinary commercial transaction.
+
+Submitting the adoption form must only simulate a request. Do not send real messages or collect sensitive information.
+
+### C. Pet Products Marketplace
+
+Create a realistic, interactive product catalog.
+
+Include:
+- Product categories, such as food, toys, accessories, hygiene, and health-related products.
+- Product cards with images, names, prices in Tunisian dinars (TND), categories, and seller information.
+- Search by product name.
+- Category filtering.
+- Product detail views.
+- An add-to-cart button.
+- A cart accessible from the header.
+- Quantity adjustment and item removal.
+- Automatic subtotal and total calculations.
+- A clear empty-cart state.
+
+Provide sufficient sample data to make the catalog feel realistic. Use believable product descriptions and prices rather than repeating the same placeholder products.
+
+### D. Simulated Checkout
+
+Build a complete but simulated shopping flow.
+
+Include:
+- A checkout form with basic customer and delivery details.
+- Delivery method selection.
+- Payment method selection, showing relevant local options such as bank card, Flouci, D17, and cash on delivery.
+- An order summary with products, quantities, delivery charges, and the total.
+- Form validation.
+- An order confirmation screen with a randomly generated demo order reference.
+
+Clearly identify payment and order processing as a demonstration. Never request card numbers, passwords, or real payment credentials.
+
+Do not connect to real delivery or payment services. Simulate these choices in the browser and explain that no actual payment or shipment occurs.
+
+### E. Veterinary and Pet Services Directory
+
+Create a section for discovering veterinarians, pet shops, and relevant pet-service providers.
+
+Include:
+- A searchable and filterable directory.
+- Provider cards with names, images, categories, locations, and short descriptions.
+- Detailed provider profiles.
+- Available services and indicative prices where appropriate.
+- Opening hours and contact information using clearly fictional sample details if necessary.
+- A contact or inquiry button with simulated confirmation.
+
+The purpose is to demonstrate how professionals can present their businesses and connect with customers.
+
+Do not build actual scheduling integrations or imply that an appointment has been confirmed with a real provider.
+
+### F. Promotions, Flash Sales, and Vouchers
+
+Create a visually distinctive promotions area featuring:
+- Discounted products.
+- Promotional offer cards.
+- A simple flash-sale presentation.
+- Example vouchers or coupon codes.
+- A coupon field in the shopping cart or checkout.
+
+Use predefined discount rules and implement the basic coupon calculation in vanilla JavaScript.
+
+All promotions and discount conditions are for demonstration purposes. Do not implement real payment-related benefits.
+
+### G. Pet-Care Education
+
+Create a useful educational section containing sample articles or tutorials on topics such as:
+- Preparing to adopt a pet.
+- Feeding and caring for cats and dogs.
+- Basic hygiene.
+- Preparing a home for a new animal.
+- Responsible adoption and animal welfare.
+
+Each article should open a readable detail view or dedicated static page. Do not leave article cards as nonfunctional decoration.
+
+Use meaningful sample content rather than filler text.
+
+### H. Simple Demo Chatbot
+
+Add a small chatbot widget that demonstrates how visitors could obtain basic help.
+
+The chatbot should:
+- Open and close from a floating interface.
+- Display a welcome message.
+- Offer suggested questions about adoption, products, delivery, and animal care.
+- Respond to predefined keywords or simple rule-based intents.
+- Provide useful responses or redirect users to the relevant section.
+
+This is a local, rule-based simulation. Do not connect to an AI API or claim it uses artificial intelligence.
+
+### I. Feedback
+
+Add a feedback form where users can submit:
+- A rating.
+- A short comment.
+- An optional feedback category.
+
+Validate the form and display a success message. Use local browser storage only if persistence is useful.
+
+Do not build a feedback management dashboard.
+
+### J. Become a Partner
+
+The project depends on shelters, animal-protection associations, veterinarians, pet shops, and suppliers.
+
+Include a partner information section with:
+- The benefits of joining the marketplace.
+- The types of organizations and professionals who can participate.
+- A simple partnership inquiry form.
+- A simulated success confirmation.
+
+Do not implement partner accounts, registrations, dashboards, or backend workflows.
+
+### K. Trust and Responsible Animal Welfare
+
+Across the site, communicate the importance of:
+- Responsible adoption.
+- Animal welfare.
+- Trustworthy relationships with shelters and professionals.
+- Useful animal-care information.
+- Transparent product pricing and simulated transaction flows.
+
+Do not fabricate certifications, verified business reviews, or real customer testimonials. Any sample ratings, reviews, businesses, or animal listings must be presented as demonstration data.
+
+## 5. UX and Visual Design
+
+Create a polished, modern, approachable website suitable for presenting the concept to students, potential partners, and prospective users.
+
+Visual direction:
+- Warm, welcoming, trustworthy, and contemporary.
+- A clean layout with generous spacing.
+- A restrained color palette inspired by nature and animals, such as green, cream, and warm neutral tones.
+- Strong typography and clear visual hierarchy.
+- Rounded cards, subtle shadows, and consistent buttons.
+- High-quality animal and product imagery.
+- Consistent iconography.
+- Clear hover, active, loading where relevant, success, and error states.
+- Responsive navigation and layouts for desktop, tablet, and mobile.
+
+Avoid an overly corporate appearance, excessive animations, or a generic dashboard-style design.
+
+The homepage should look like a credible marketplace that could eventually become a real product.
+
+All interactive components must be visually consistent. Use CSS transitions sparingly and respect the user's reduced-motion preference.
+
+## 6. Language and Local Context
+
+Use *French as the primary interface language*, since the project brief is written in French.
+
+Use Tunisian context where appropriate:
+- Currency: TND.
+- Local payment options displayed as demo choices.
+- Plausible Tunisian city names for sample locations.
+- French labels and readable, natural French text.
+
+Keep the content easy to understand for a general audience. Do not use lorem ipsum or unfinished placeholder copy.
+
+## 7. Suggested File Structure
+
+Prefer a lightweight structure such as:
+
+- index.html — main application structure.
+- css/styles.css — layout, styling, responsive behavior.
+- js/data.js — predefined mock data.
+- js/app.js — navigation and application interactions.
+- js/cart.js — cart and simulated checkout logic, if useful.
+- assets/ — local images and icons if available.
+
+You may use a different structure if the existing repository makes that more appropriate.
+
+Avoid creating many files or layers just for architectural formality. Keep the code readable and easy to modify.
+
+## 8. Functional Requirements
+
+The prototype must demonstrate real interaction, not only visual screens.
+
+Verify that:
+- Navigation links lead to existing sections or views.
+- Search and filters actually change displayed results.
+- Product details can be opened.
+- Cart operations work correctly.
+- Subtotals, discounts, delivery charges, and totals are calculated consistently.
+- Checkout validation and confirmation work.
+- Adoption-interest forms validate and show success feedback.
+- Provider contact and partnership forms behave consistently.
+- Educational content opens correctly.
+- The chatbot responds to supported questions.
+- Feedback can be submitted.
+- Refreshing the browser preserves appropriate demo state, such as the cart, when using localStorage.
+- Buttons do not lead to dead ends or empty pages.
+- Empty states and invalid input are handled gracefully.
+- The website is responsive and usable with a keyboard.
+
+For features that normally require a backend, provide an honest simulated experience with clear confirmation messages. Do not pretend that a real transaction, adoption, booking, or external notification has occurred.
+
+## 9. Implementation Workflow
+
+Follow this workflow:
+
+1. Inspect the attached project brief and current repository files.
+2. Identify the minimum implementation needed to cover the specified user journeys.
+3. Build the complete frontend using the simplest viable structure.
+4. Populate it with realistic sample data covering all major sections.
+5. Implement the required interactive behaviors.
+6. Review the site for visual consistency, accessibility, and responsive layout.
+7. Test the main journeys and correct any errors found.
+
+Do not stop at step 2 and return only a plan. Complete the implementation within the repository.
+
+Do not ask for additional information unless a genuine blocker makes implementation impossible. Make reasonable, conservative decisions that follow the project brief.
+
+## 10. Definition of Done
+
+The prototype is complete when a person can open the website, immediately understand the Marketplace Pet Lovers concept, and explore all the major features without needing an account, backend, API key, or external service.
+
+A user must be able to demonstrate these journeys:
+
+1. Discover the platform and navigate its main sections.
+2. Find an animal and submit a simulated adoption inquiry.
+3. Browse products, add items to a cart, apply a demo coupon, and complete a simulated checkout.
+4. Discover a veterinarian or pet shop and submit an inquiry.
+5. Explore pet-care tutorials.
+6. Interact with the demo chatbot.
+7. Submit feedback.
+8. Submit a partnership inquiry.
+
+Keep the application simple enough that another developer can understand and extend it without having to learn a framework or configure infrastructure.
+
+When finished, provide a concise summary of:
+- What was implemented.
+- Which files were created or modified.
+- How to run the prototype.
+- Which actions are simulated rather than real.
+- Any remaining issues that prevent the prototype from working correctly.
+
+*Final priority: deliver a coherent, attractive, fully navigable frontend prototype covering the entire Marketplace Pet Lovers concept, with mock data and simulated interactions only. Avoid unnecessary complexity.*
+thats the project overview :
+# Project Brief — Marketplace Pet Lovers
+
+## 1. Project Overview
+
+*Marketplace Pet Lovers* is a digital platform designed to connect pet owners, people looking to adopt animals, animal shelters, animal-protection associations, veterinarians, and pet shops. Its main objective is to centralize pet adoption, animal-related products, and professional services in one accessible and trustworthy marketplace.
+
+The platform aims to simplify the process of adopting an animal responsibly, purchasing pet products, and discovering animal-care services, while providing professionals and organizations with an additional channel to promote their offers and reach potential customers.
+
+## 2. Main Objectives
+
+- *Promote responsible adoption:* Allow shelters and animal-protection associations to publish adoption listings and connect animals with potential adopters.
+- *Centralize pet-related offers:* Bring together products, veterinary services, and services offered by pet shops and other professionals.
+- *Build trust:* Encourage responsible interactions between adopters, pet owners, shelters, and professional providers.
+- *Simplify transactions:* Facilitate product orders and provide suitable payment and delivery options.
+- *Support animal welfare:* Make it easier for users to discover adoption opportunities and obtain information that helps them care for their animals.
+- *Create business opportunities:* Give partner businesses visibility and generate revenue through product sales, commissions, and optional paid promotion.
+
+## 3. Target Users
+
+The platform serves four main user groups:
+
+1. *Pet owners:* People who own animals and need products, veterinary services, advice, and other pet-related services.
+2. *Potential adopters and pet lovers:* Users searching for animals to adopt, adoption information, products, or care resources.
+3. *Animal shelters and associations:* Organizations that publish adoption announcements and connect with potential adopters.
+4. *Professional providers:* Veterinarians, pet shops, and animal-product suppliers who want to offer products and services through the marketplace.
+
+## 4. Core Features
+
+### A. Responsible Pet Adoption
+- Browse available adoption announcements.
+- View animal information and adoption details.
+- Discover shelters and animal-protection associations.
+- Contact the relevant organization to learn about the adoption process.
+
+### B. Pet Products Marketplace
+- Browse and categorize pet products.
+- View product details and prices.
+- Manage a shopping cart and submit orders.
+- Discover offers from participating pet shops and suppliers.
+
+### C. Veterinary and Pet Services
+- Discover veterinarians, pet shops, and relevant service providers.
+- Browse available services and product offers.
+- Find professional information and contact details.
+
+### D. Animal Care and Customer Support
+- Provide tutorials and useful educational content.
+- Offer chatbot-based assistance.
+- Collect user feedback.
+- Display promotions, flash sales, and purchase vouchers.
+
+### E. Order and Transaction Management
+- Organize and categorize customer orders.
+- Provide suitable payment options, such as bank cards, Flouci, D17, and cash on delivery.
+- Support product delivery through logistics partners.
+- Consider animal transport and pre-adoption veterinary checks where applicable.
+
+### F. Partner and Business Management
+- Enable partners to manage their offers and product information.
+- Give professional providers visibility on the platform.
+- Offer optional paid promotional placements.
+
+## 5. Business Model
+
+The platform's proposed revenue sources are:
+
+- *Product sales:* Revenue from selling pet-related products through the catalog.
+- *Partner commissions:* Commissions on product and service transactions completed through the marketplace.
+- *Paid promotion:* Optional paid visibility for partner businesses and their offers.
+
+Potential operational partners include animal shelters, veterinarians, pet shops, suppliers, delivery companies, payment providers, and cloud-hosting providers.
+
+## 6. Proposed Prototype Scope (MVP)S
+
+The first prototype should demonstrate the platform's main value without requiring a complete commercial infrastructure.
+
+The recommended initial scope is:
+
+- A homepage introducing the marketplace and its main categories.
+- An adoption section featuring animal cards and detailed animal profiles.
+- A product catalog with categories, search, product details, and a shopping cart.
+- A services section for discovering veterinarians and pet shops.
+- A basic contact or adoption-interest form.
+- A simple order confirmation flow.
+- A partner information or submission interface to demonstrate how providers contribute to the marketplace.
+
+The prototype can initially use sample data and simulated transactions. Real payments, delivery integrations, automated order processing, and complete partner dashboards can be developed in later stages.
+
+## 7. Expected Outcome
+
+The expected result is a user-friendly digital marketplace that brings together responsible adoption, pet products, and animal-care services in one place. The prototype should demonstrate how users discover offers, interact with providers, and begin an adoption or purchase process, while showing how the platform creates value for both animal lovers and professional partners.
